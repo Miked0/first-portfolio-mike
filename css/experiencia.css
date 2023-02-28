@@ -1,0 +1,125 @@
+.experiencia {
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+  }
+
+  .experiencia .subtitulo { word-break: break-all;
+    font-family: 'Playfair Display';
+    background: linear-gradient(180deg, #7FF7BE 0%, rgba(20, 193, 112, 0.892929) 57.29%, #03331C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    }
+
+    .experiencia-texto{ 
+font-size: 1.5rem;
+line-height: 1.33;
+max-width: 40ch;
+margin-bottom: 60px;
+color: #0C9748;
+    }
+
+    .experiencia-texto strong{
+        color: #A2F0CB;
+    }
+
+    .empresa {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px 20px;
+        padding: 20px;
+       border: 0.2px solid #f0f0f0;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        position: relative;
+
+      }
+
+      .empresa::before {
+        content: "";
+        display: block;
+        width: 10px;
+        height: 4px;
+        background: linear-gradient( #A2F0CB 19.79%, #37B26E 56.77%, #2FAD67 81.25%, #149E50 100%);
+        position: absolute;
+        top: 32px;
+        left: -10px;}
+
+        .empresa-ano {
+            position: absolute;
+            top: 22px;
+            left: -100px;
+            text-align: right;
+            width: 80px;
+                       background: linear-gradient(70.68deg, rgba(0, 0, 0, 0.957018) -15.13%, #75D6A4 90.14%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+            font-size: 0.875rem;
+          }
+
+          .empresa-titulo {
+              font-family:"Playfair Display", sans-serif;
+              color: #A2F0CB;
+              font-size: 1.125rem;
+              line-height: 1.1;
+              font-weight: bold;
+          }
+
+          .empresa-texto { 
+              font-size: 0.875rem;
+              line-height: 1.4;
+              color: #0C9748;
+          }
+          
+
+          .empresa-habilidades{ 
+              display: flex;
+              flex-wrap: wrap;
+              gap: 10px;
+            align-content: start;
+                  }
+
+                  .empresa-habilidades li { 
+                      font-size: 0.875;
+                    line-height: 1.4px;
+                border-radius:4px;
+            padding: 10px 10px;           
+        border: 1px solid #2CBF6C;
+                  }
+
+
+                  @media (max-width: 800px){
+                     .experiencia{
+                         grid-template-columns: 1fr;
+                         gap: 40px;
+          
+                     } 
+
+                    .experiencia-texto{
+                        font-size: 1.25rem;
+                        
+                    }
+                    .empresa-ano {position: initial;
+                        order: 1;
+                        width: initial;
+                    }
+                }
+
+                @media (max-width: 400px){
+                    .empresa{
+                        grid-template-columns: 1fr;
+                    }
+                }
+
+
+            .empresa-habilidades li:hover{    background-color: rgba(207, 252, 220, 0.1);
+                border-radius: 50px;
+
+                transition: 0.8s;}
+            
+        

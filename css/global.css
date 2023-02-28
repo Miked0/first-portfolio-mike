@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Playfair+Display:wght@700&family=Red+Hat+Display:wght@500;700&display=swap');
+
+*{margin: 0%;
+
+font-family: "Red Hat Display", sans-serif;
+
+color: #fff;}
+
+body{
+    background-image: url(/img/bg.jpg);
+    z-index: -2;
+  
+}
+
+
+h1,
+h2,
+h3,
+p {margin:0}
+
+
+
+a{text-decoration: none;
+}
+
+
+ul{ list-style: none;
+padding: 0;
+margin: 0;}
+
+
+img{max-width: 100%;
+display: block;}
+
+.subtitulo {
+  max-width: 4ch;
+    font-size: 8rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: break-all;
+    }
+
+
+    @media (max-width: 800px){
+      .subtitulo{ font-size: 3rem;
+    
+    max-width: initial !important;
+
+    
+        } 
+     }
+
+     li { list-style: none;}

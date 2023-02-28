@@ -1,0 +1,47 @@
+.footer {background: #000;}
+
+.footer-container{
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    
+}
+
+.footer-texto{color: #8ACE7F; 
+    font-size: 1.5rem;
+    line-height: 1.33;
+}
+
+.footer-contato li{
+    font-weight: bold;
+    font-size: 1.25rem;
+    line-height: 1.1;
+    color: #A2F0CB;
+    margin-bottom: 30px;
+
+}
+.footer-copy{ 
+    font-size: 1.25rem;
+grid-column: 1 / -1;
+
+}
+
+
+.linkedin{ color: #A2F0CB !important;}
+
+
+.footer-contato li:hover{ 
+    text-decoration: underline;
+}
+
+@media(max-width: 800px){
+    .footer-container { grid-template-columns: 1fr;
+    gap: 40px;
+    }
+    .footer-contato li { font-size: 1.5rem;
+    }
+}
